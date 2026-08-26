@@ -16,7 +16,7 @@ def refresh_data(text_box):
 def save_to_disk(varibale1):
     content = varibale1.get("1.0", tk.END)
     folder_path = Path("/Users/nadavelbaz/PycharmProjects/SystemInfo")
-    file_path = folder_path/f"stat_information{datetime.now()}.txt"
+    file_path = folder_path/f"stat_information_{datetime.now().strftime("%Y.%m.%d-%H.%M.%S")}.txt"
     file_path.write_text(content, encoding="utf-8")
 
 
