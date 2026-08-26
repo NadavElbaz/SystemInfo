@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="640e6725-c669-4d7e-b41c-a3704e91a63e" name="Changes" comment="version 1.3">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tkfunctions.py" beforeDir="false" afterPath="$PROJECT_DIR$/tkfunctions.py" afterDir="false" />
-    </list>
+    <list default="true" id="640e6725-c669-4d7e-b41c-a3704e91a63e" name="Changes" comment="version 1.3" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
