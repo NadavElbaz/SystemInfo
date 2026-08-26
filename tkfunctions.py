@@ -1,6 +1,7 @@
 from systemutils import get_system_info
 from pathlib import Path
 import tkinter as tk
+from datetime import datetime
 
 def refresh_data(text_box):
     ### Function to fetch system info and populate the GUI with the data
@@ -14,9 +15,8 @@ def refresh_data(text_box):
 
 def save_to_disk(varibale1):
     content = varibale1.get("1.0", tk.END)
-    folder_path = Path("/Users/nadavelbaz/PycharmProjects/Nadav Project")
-    file_path = folder_path/"test.txt"
+    folder_path = Path("/Users/nadavelbaz/PycharmProjects/SystemInfo")
+    file_path = folder_path/f"stat_information{datetime.now()}.txt"
     file_path.write_text(content, encoding="utf-8")
 
-    file_path2 = folder_path / "test2.txt"
-    file_path2.write_text(content, encoding="utf-8")
+

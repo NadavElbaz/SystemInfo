@@ -12,15 +12,15 @@ def get_system_info():
 
     # RAM
     ram = psutil.virtual_memory()
-    ram_total_gb = nd.bytes_into_gigabytes(ram.total)
-    ram_available_gb = nd.bytes_into_gigabytes(ram.available)
+    ram_total_gb = nd.convert_function(ram.total,4)
+    ram_available_gb = nd.convert_function(ram.available,1)
     ram_available_percentage =  nd.calculate_percentages(ram_available_gb,ram_total_gb)
 
     # Storage
     disk = shutil.disk_usage(".")
-    disk_total_gb = nd.bytes_into_gigabytes(disk.total)
-    disk_free_gb = nd.bytes_into_gigabytes(disk.free)
-    disk_used_gb = nd.bytes_into_gigabytes(disk.used)
+    disk_total_gb = nd.convert_function(disk.total,4)
+    disk_free_gb = nd.convert_function(disk.free,3)
+    disk_used_gb = nd.convert_function(disk.used,2)
     disk_free_percentage = nd.calculate_percentages(disk_free_gb,disk_total_gb)
 
     system_info = {
@@ -34,5 +34,7 @@ def get_system_info():
         'python_version': platform.python_version(),
         'ram_available_percentage': f"{ram_available_percentage}%"
     }
+
+
 
     return system_info
