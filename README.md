@@ -49,3 +49,6 @@ python main.py
 | `tkfunctions.py` | GUI callbacks — `refresh_data` (populates the text box) and `save_to_disk` (writes it to a file). |
 | `systemutils.py` | `get_system_info()` — collects CPU, RAM, disk, and Python version stats. |
 | `nadavutils.py` | Small helpers for converting bytes to gigabytes and calculating percentages. |
+| `requirements.txt` | Python dependencies (`psutil`). |
+| `assets/` | Static assets used by this README (e.g. the UI screenshot). |
+| `.gitignore` | Excludes `__pycache__/`, `.venv/`, `.idea/`, and generated `stat_information_*.txt` files. |
